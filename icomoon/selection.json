@@ -1,0 +1,70 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M512 32l-480 480h288v512h384v-512h288z"
+				],
+				"attrs": [],
+				"tags": [
+					"arrow-up",
+					"up",
+					"upload",
+					"top"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 1065,
+				"order": 1,
+				"prevSize": 32,
+				"ligatures": "arrow-up, up",
+				"name": "arrow-up",
+				"code": 59648
+			},
+			"setIdx": 1,
+			"setId": 0,
+			"iconIdx": 306
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"embed": false,
+			"autoHost": true
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 4473924,
+			"bgColor": 16777215
+		},
+		"historySize": 100,
+		"showCodes": false,
+		"quickUsageToken": {
+			"UntitledProject": "MjlmNTQ2OWY2M2ZlNGJjYjI0YWU2MmNlOTI5YzJiY2IjMSMxNDQ2MzA5MjQzIyMj"
+		},
+		"fontHostingName": false,
+		"gridSize": 16,
+		"showGrid": true
+	}
+}

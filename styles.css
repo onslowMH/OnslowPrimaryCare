@@ -1,0 +1,679 @@
+@charset "UTF-8";
+@import url('font-awesome/css/font-awesome.min.css');
+@import url('icomoon/style.css');
+/* CSS Document */
+
+
+/* RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    font-family: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: "";
+}
+
+
+.buttonHolder {
+   text-align: center; }
+
+.myButton {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #005681), color-stop(1, #005681));
+	background:-moz-linear-gradient(top, #005681 5%, #005681 100%);
+	background:-webkit-linear-gradient(top, #005681 5%, #005681 100%);
+	background:-o-linear-gradient(top, #005681 5%, #005681 100%);
+	background:-ms-linear-gradient(top, #005681 5%, #005681 100%);
+	background:linear-gradient(to bottom, #005681 5%, #005681 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#005681', endColorstr='#005681',GradientType=0);
+	background-color:#005681;
+	border:1px solid #005681;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding: 5px 15px;
+  margin: 8px 0px 8px 0px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #005681), color-stop(1, #005681));
+	background:-moz-linear-gradient(top, #005681 5%, #005681 100%);
+	background:-webkit-linear-gradient(top, #005681 5%, #005681 100%);
+	background:-o-linear-gradient(top, #005681 5%, #005681 100%);
+	background:-ms-linear-gradient(top, #005681 5%, #005681 100%);
+	background:linear-gradient(to bottom, #005681 5%, #005681 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#005681', endColorstr='#005681',GradientType=0);
+	background-color:#005681;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* END RESET */
+
+body {
+    background: #ecdfbb url('images/body-bg-tile.png') repeat-x top;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+    background: transparent url('images/wrapper-bg-tile.png') repeat-y top center;
+    margin: 0 auto;
+    width: 920px;
+}
+
+.info #page {
+    width: 904px;
+    background: #FFFFFF url('images/homepage-no-column-bg-tile.png') repeat-y top center;
+    margin-left: 8px;
+    padding-bottom: 21px;
+}
+
+#page {
+    width: 904px;
+    background: #FFFFFF url('images/homepage-bg-tile.png') repeat-y top center;
+    margin-left: 8px;
+    padding-bottom: 21px;
+}
+
+#mainColumn {
+    width: 643px;
+    float: left;
+}
+
+.services #content p {
+    line-height: 1.4em;
+}
+
+.services ul {
+    line-height: 2.5em;
+}
+
+a {
+    color: #005581;
+}
+
+a.blueLink {
+    color: #005581;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* #rightSidebar {width:261px; background:transparent url('images/sidebar-bg-tile.png') repeat-x top center; float:right; }*/
+
+
+/* UTILITIES */
+
+.hide {
+    display: none;
+}
+
+.clear {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    clear: both;
+    border: 0;
+}
+
+.center {
+    text-align: center;
+    margin: 14px auto;
+}
+
+.right {
+    float: right;
+    margin-left: 0px;
+}
+
+
+/* STYLES */
+
+#content {
+    font-size: 13px;
+    width: 363px;
+    margin-left: 42px;
+    float: left;
+    padding-top: 25px;
+    color: #005581;
+}
+
+#content h1 {
+    line-height: 1.2em;
+    margin-bottom: 12px;
+    color: #e7901f;
+}
+
+#content h1.alt {
+    color: #517e9e;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+}
+
+#content ul {
+    list-style: disc;
+    margin-left: 21px;
+    line-height: 2.5em;
+    margin-bottom: 21px;
+}
+
+#content p {
+    line-height: 1.4em;
+    color: #005581;
+    margin-bottom: 15px;
+}
+
+#content h3 {
+    font-weight: bold;
+    color: #e7901f;
+    margin-bottom: 5px;
+}
+
+#content h4 {
+    margin-bottom: 15px;
+    line-height: 1.3em;
+    color: #666;
+}
+
+ul#navUL {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#navUL li {
+    display: inline;
+    float: left;
+}
+
+#leftColumn {
+    width: 195px;
+    float: left;
+    padding-top: 25px;
+    margin-left: 19px;
+}
+
+#leftColumn h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #005581;
+    line-height: 1.3em;
+}
+
+
+/* #leftColumn p {font-size:11px; line-height:1.2em; }*/
+
+#leftColumn img {
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+#leftColumn ul {
+    list-style: disc;
+    margin-left: 13px;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #005581;
+    margin-top: 5px;
+}
+
+#leftColumn ul li {
+    margin-bottom: 5px;
+}
+
+.captionIMG {
+    padding-bottom: 6px;
+    margin-bottom: 17px;
+    width: 191px;
+}
+
+#leftColumn .captionIMG img {
+    margin: 0;
+}
+
+.captionIMG p {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 6px 6px 6px;
+    line-height: 1.2em;
+}
+
+.captionIMG p.courtesy {
+    color: #FFF;
+    font-size: 9px;
+    font-weight: normal;
+}
+
+.captionWrapper {
+    width: 191px;
+    float: right;
+    margin-left: 17px;
+}
+
+.captionIMGALT {
+    background-color: #517e9e;
+    padding-bottom: 0;
+    margin-bottom: 0px;
+}
+
+.captionIMGALT img {
+    margin-bottom: 0;
+}
+
+.captionIMGALT p {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 6px 0 6px;
+    line-height: 1.2em;
+    padding-bottom: 6px;
+    margin-bottom: 0;
+}
+
+.captionIMGALT p.courtesy {
+    color: #FFF;
+    font-size: 9px;
+    font-weight: normal;
+}
+
+#rightSidebar {
+    width: 261px;
+    background: transparent url('images/sidebar-bg-tile.png') round;
+    float: right;
+    color: #005581;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    min-height: 550px;
+}
+
+#rightSidebar h2 {
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+#rightSidebar h3 a {
+    color: #005581;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#rightSidebar p {
+    font-size: 11px;
+    color: #005581;
+    line-height: 1.5em;
+    margin: 14px;
+}
+
+#contactInfo {
+    color: #005581;
+}
+
+#contactInfo p.bold {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+#contactInfo p {
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 8px;
+}
+
+.center h3 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#footer {
+    font-size: 10px;
+    color: #005581;
+    width: 920px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#footer p {
+    margin-right: 8px;
+    margin-top: 0;
+    padding-top: 4px;
+    text-align: right;
+}
+
+#footer a {
+    color: #005581;
+}
+
+.info #content {
+    width: 575px;
+    margin-left: 19px;
+}
+
+.info #content h3 {
+    font-weight: bold;
+}
+
+.info #content p {
+    margin-bottom: 21px;
+}
+
+.teaser {
+    text-align: center;
+    margin-top: 0;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.5em;
+    color: red;
+    font-weight: bold;
+    padding:10px; 
+    border: solid 2px red;
+    background: white;
+}
+
+.teaser h3 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    padding-top: 0;
+    color: #005581;
+}
+
+.teaserCopy a {
+    color: #005581;
+}
+
+div.bio h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div.bio p {
+    font-size: 12px;
+    text-align: left;
+}
+
+.right {
+    float: left;
+    width: 150px;
+}
+
+img.headshot {
+    float: left;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+ul.servicesUL li {
+    list-style: disc;
+    line-height: 1.5em;
+    margin-bottom: 12px;
+}
+
+ul.anchorUL li {
+    list-style: none;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+
+
+/*Red Hammer Styles*/
+
+/*Main Nav*/
+#nav {
+   border-top: 3px solid #E7901F;
+    -webkit-box-shadow: 0 3px 9px 0 rgba(0,0,0,.75);
+    box-shadow: 0 3px 9px 0 rgba(0,0,0,.75);
+}
+ul#navUL {
+    float: none;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+
+}
+ul#navUL li {
+
+    background: -webkit-linear-gradient(top, rgb(16, 114, 179) 0%, rgb(12, 83, 130) 68%, rgb(10, 71, 111) 100%);
+    background: -o-linear-gradient(top, rgb(16, 114, 179) 0%, rgb(12, 83, 130) 68%, rgb(10, 71, 111) 100%);
+    background: -ms-linear-gradient(top, rgb(16, 114, 179) 0%, rgb(12, 83, 130) 68%, rgb(10, 71, 111) 100%);
+    background: -moz-linear-gradient(top, rgb(16, 114, 179) 0%, rgb(12, 83, 130) 68%, rgb(10, 71, 111) 100%);
+    background: linear-gradient(to bottom, rgb(16, 114, 179) 0%, rgb(12, 83, 130) 68%, rgb(10, 71, 111) 100%);
+    float: none;
+    text-align: center;
+
+
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    line-height: normal;
+}
+
+
+#nav a {
+    background-image: url('images/nav-btn-separator.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+
+    height: 39px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+
+    text-decoration: none;
+    font-size:11px;
+    font-weight: normal;
+    letter-spacing: .25em;
+
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#nav li:last-child a {
+    background-image: none;
+}
+ul#navUL li.homepage a {
+    font-size: 90%;
+}
+ul#navUL li a span {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.homepage #nav .homepage a {
+    color: #F2AC4F;
+}
+.difference #nav .difference a {
+    color: #F2AC4F;
+}
+
+.services #nav .services a {
+    color: #F2AC4F;
+}
+
+.patient-info #nav .patient-info a {
+    color: #F2AC4F;
+}
+.qa-series #nav .qa-series a {
+    color: #F2AC4F;
+}
+.staff #nav .staff a {
+    color: #F2AC4F;
+}
+
+.forms #nav .forms a {
+    color: #F2AC4F;
+}
+
+
+
+
+
+
+
+#nav img:last-child {
+    display: none;
+}
+.homepage #nav .homepage img:last-child {
+    display: inline;
+}
+.homepage #nav .homepage img:first-child {
+    display: none;
+}
+.difference #nav .difference img:last-child {
+    display: inline;
+}
+.difference #nav .difference img:first-child {
+    display: none;
+}
+.services #nav .services img:last-child {
+    display: inline;
+}
+.services #nav .services img:first-child {
+    display: none;
+}
+.patient-info #nav .patient-info img:last-child {
+    display: inline;
+}
+.patient-info #nav .patient-info img:first-child {
+    display: none;
+}
+.qa-series #nav .qa-series img:last-child {
+    display: inline;
+}
+.qa-series #nav .qa-series img:first-child {
+    display: none;
+}
+.staff #nav .staff img:last-child {
+    display: inline;
+}
+.staff #nav .staff img:first-child {
+    display: none;
+}
+.forms #nav .forms img:last-child {
+    display: inline;
+}
+.forms #nav .forms img:first-child {
+    display: none;
+}
+
+
+#footer p {
+    text-align: left;
+    padding-left: 10px;
+}
